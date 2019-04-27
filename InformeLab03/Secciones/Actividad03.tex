@@ -1,0 +1,134 @@
+\section{PROCEDIMIENTO} 
+
+
+\begin{enumerate}[1.]
+	\item Escribiendo consultas con el operador PIVOT
+	\begin{enumerate}[a)]
+	\item Task 1: Escribir una sentencia SELECT para recuperar el numero de clientes para un grupo especifico de clientes.\\
+		-  Abrir el SQL Server Management Studio y conectar a la basa de datos (local) usando Windows.\\
+		-  Usar la base de datos TSQL\\
+		-  Ejecutar el siguiente codigo para crear una vista\\
+		\begin{figure}[H]
+\begin{center}
+\includegraphics[width=8cm]{./Imagenes/1-1}
+\end{center}
+\end{figure}
+		-  Ejecutar la siguiente consulta
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=4cm]{./Imagenes/1-2}
+\end{center}
+\end{figure}
+		-  Luego modificamos el codigo, aplicando el operador PIVOT.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=6cm]{./Imagenes/1-3}
+\end{center}
+\end{figure}
+	\item Task 2: Especifique el elemento de agrupacion para el operador PIVOT. \\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e1-2}
+		\end{center}
+		\end{figure}
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e1-2-1}
+		\end{center}
+		\end{figure}
+		Como se puede observar tiene el mismo resultado que en la consulta de Task1
+		-  Modificar la consulta para incluir columnas adicionales desde la vista y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e1-2-2}
+		\end{center}
+		\end{figure}
+		Como se puede observar tiene el mismo resultado que en la consulta de Task1
+	\item Task 3: Use una expresion de tabla común (CTE) para especificar el elemnto de agrupacion para el operador PIVOT.\\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/3-1}
+		\end{center}
+		\end{figure}
+		Como se puede observar tiene el mismo resultado que en la consulta de Task1
+	\item Task 4: Escribe una instruccion SELECT para recuperar el monto total de ventas para cada cliente y categoria de producto.\\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=8cm]{./Imagenes/3-2}\\
+		\includegraphics[width=8cm]{./Imagenes/3-3}
+		\end{center}
+		\end{figure}
+	\end{enumerate}
+
+	\item Escribiendo consultas con el operador UNPIVOT
+	\begin{enumerate}[a)]
+	\item Task 1: Crear y consultar la vista Sale.PivotCustGroups.\\
+		-  Escribir la siguiente consulta y ejecutar para crear una vista llamada Sales.PivotCustGroups.\\
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=8cm]{./Imagenes/e2-1}
+		\end{center}
+		\end{figure}
+		-  Despues escribrir y ejecutar la siguiente consulta.
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=6cm]{./Imagenes/e1-1-1}
+		\end{center}
+		\end{figure}
+	\item Task 2: Escriba una instruccion SELECT para recuperar una fila para cada pais y grupo de cliente.\\
+		-  Escribir la siguiente consulta y ejecutar.\\
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=8cm]{./Imagenes/e2-2}
+		\end{center}
+		\end{figure}
+	\item Task 3: Eliminar las vistas creadas.
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=6cm]{./Imagenes/e2-3}
+		\end{center}
+		\end{figure}
+	\end{enumerate}
+
+
+
+	\item Escribiendo consultas con las clausulas GROUPING SETS, CUBE, and ROLLUP.
+	\begin{enumerate}[a)]
+	\item Task 1: Escriba una instruccion SELECT que use LA SUBCLAUSULA GROUPING SETS para devolver el número de
+Clientes para diferentes conjuntos de agrupación.\\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e3-1}
+		\end{center}
+		\end{figure}
+	\item Task 2: Escriba una instruccion SELECT que use la subclausula CUBE para recuperar Grouping sets basados en valores de ventas anuales, mensuales y diarios.\\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e3-2}
+		\end{center}
+		\end{figure}
+	\item Task 3: Escriba la misma instruccion SELECT usando la cubclausula ROLLUP.\\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e3-3}
+		\end{center}
+		\end{figure}
+	\item Task 4: Analizar el valor total de ventas por año y mes.\\
+		-  Escribir la siguiente consulta y ejecutar. 
+		\begin{figure}[H]
+		\begin{center}
+		\includegraphics[width=7cm]{./Imagenes/e3-4}
+		\end{center}
+		\end{figure}
+	\end{enumerate}
+\end{enumerate}
+
+
+
